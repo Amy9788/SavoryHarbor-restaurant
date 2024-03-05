@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link#theme(href="../css/user.css", type="text/css", rel="stylesheet")
+    title User
+    link(rel="icon",href="resources/images/logo.png")
+  body 
+
+    h1 Welcome to SavoryHarbor
+    main
+      .option
+        .option1
+          a#sign-in(href="/user/signIn")
+            // Nasiyat Akmatova from Canva
+            img(src="/images/signIn.png", alt="sign_in")
+          h2#title-sign-in Sign In
+        
+        .option2
+          a#register(href="/user/register")
+            // Nasiyat Akmatova from Canva
+            img(src="/images/register.png", alt="register")
+          h2#title-create-account Create an Account
+
+        .option3
+          a#guess(href="/user/guess")
+            // Nasiyat Akmatova from Canva
+            img(src="/images/guess.png", alt="guess")
+          h2#title-sign-in-as-guess Sign In As Guest

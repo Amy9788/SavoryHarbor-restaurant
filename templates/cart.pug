@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link#theme(href="../css/cart.css", type="text/css", rel="stylesheet")
+    title Your Order
+    link(rel="icon",href="resources/images/logo.png")
+  body 
+    include navlinks
+    h1 Your Order
+    main
+      table#order-table
+        tr#table-header
+          th Name 
+          th Price 
+          th Qty 
+          th Delete
+          th Subtotal
+        each item in get_cart
+          tr#table-data(class="data" +item.cartId)
+            td=item.item_name
+            td=item.price
+            td#quantity
+              input(type="number", id="get-qty-num" +item.cartId)
+              button#confirm-qty-btn(type="button",onclick="qty("+item.cartId+","+item.price+")") ✔️
+              span.display-quantity(id="display-quantity" +item.cartId)=item.quantity
+            td
+              button#delete-btn(type="button",onclick="delete_item("+item.cartId+")") Delete
+            td(id="display-total" +item.cartId)=item.total
+      button#checkout-btn(type="button",onclick="check_out()") Checkout
+    script(src="/js/cart.js")
+
+          

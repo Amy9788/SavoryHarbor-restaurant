@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+  head 
+    meta(charset="UTF-8")
+    link#theme(href="../css/menu.css", type="text/css", rel="stylesheet")
+    title Menu
+    link(rel="icon" href="/images/main_imgs/logo.png" )
+  body
+    include navlinks
+    main
+      h1 SavoryHarbor
+      // The menu was AI-Generated
+      section.starters
+        h2.category Starters:
+        p Cozy Miso Ramen - 
+          b $12.99 
+          span 
+            button.order-btn(onclick= "addOrder(1," + message +")") Add to Order
+
+        p Seafood Mix - 
+          b $18.99
+          span 
+            button.order-btn(onclick= "addOrder(2," + message +")") Add to Order
+
+      section.main-courses
+        h2.category Main Courses:
+
+        p Spicy Ramen - 
+          b $14.99
+          span 
+            button.order-btn(onclick= "addOrder(3," + message +")") Add to Order
+
+        p Java-Infused Salmon - 
+          b $16.99
+          span 
+            button.order-btn(onclick= "addOrder(4," + message +")") Add to Order
+        
+        p Margherita Pizza - 
+          b $10.99
+          span 
+            button.order-btn(onclick= "addOrder(5," + message +")") Add to Order
+
+      section.main-courses
+        h2.category Sweet Treats:
+
+        p Bread Pudding Love - 
+          b.price $8.99
+          span 
+            button.order-btn(onclick= "addOrder(6," + message +")") Add to Order
+        p Fruit Medley Parfait - 
+          b.price $7.99
+          span 
+            button.order-btn(onclick= "addOrder(7," + message +")") Add to Order
+
+      section.main-courses
+        h2.category Beverages:
+
+        p Crafted Coffee Delights - Starting at 
+          b.price $3.99
+          span 
+            button.order-btn(onclick= "addOrder(8," + message +")") Add to Order
+
+        p Signature Cold Brew - 
+          b.price $4.99
+          span 
+            button.order-btn(onclick= "addOrder(9," + message +")") Add to Order
+        
+        p Gourmet Hot Chocolate - 
+          b.price $4.49
+          span 
+            button.order-btn(onclick= "addOrder(10," + message +")") Add to Order
+      p At 
+        b SavoryHarbor
+        |, we keep it easy and friendly. 
+        |Enjoy a diverse menu inspired by global flavors, 
+        | crafted with care for a delightful dining experience. 
+        | Prices are subject to change, and smiles are always free!
+    script(src="/js/menu.js")

@@ -1,0 +1,107 @@
+@import "nav.css";
+/* @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap"); */
+
+:root {
+  --tittle-color: #233040;
+  --label-color: #255355;
+}
+
+p#logIn-confirmation-message{
+  font-size: 20px;
+  color: red;
+}
+
+.bg-img {
+  background-image: url("/images/user_form.jpg");
+  padding-top: 1000px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  background-repeat: no-repeat;
+}
+#user-form {
+  padding-top: 50px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--tittle-color);
+  font-size: 30px;
+  margin-bottom: 20px;
+
+}
+
+label {
+  color: var(--label-color);
+  font-size: 25px;
+}
+
+input {
+  font-size: 20px;
+}
+input#password{
+  margin-bottom: 20px;
+}
+.info {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-left: 30px;
+  width: 150px;
+  height: 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 2em;
+}
+
+button:hover{
+  background-color: #255355;
+}
+
+a#new-account{
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+#account-confirmation-message{
+  color: red;
+}
+
+
+.bg-img2 {
+  background-image: url("/images/user_form_2.jpg");
+  padding-top: 1000px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  background-repeat: no-repeat;
+}
+
+button {
+  margin-left: 30px;
+  width: 150px;
+  height: 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 2em;
+}
+
+a#new-account {
+  margin-left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 5px 10px;
+  background-color: antiquewhite;
+}
+p{
+  color: red;
+  font-size: 20px;
+}
+

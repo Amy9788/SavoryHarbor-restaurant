@@ -1,0 +1,65 @@
+
+doctype html
+html(lang='en')
+  head 
+    meta(charset="UTF-8")
+    link#theme(href="../css/reviews.css", type="text/css", rel="stylesheet")
+    title Reviews
+    link(rel="icon" href="/images/main_imgs/logo.png" )
+  body
+    include navlinks
+    
+    header
+      // Begin AI-Generated Content
+      p Welcome to our Review Page! Your experiences at SavoryHarbor matter, 
+        |and we want to hear all about them. This is your space to celebrate 
+        |your favorite dishes, recommend hidden gems, and let your taste buds 
+        |do the talking. Scroll down, share your insights, and let's build a 
+        |community of food enthusiasts together. Your reviews shape our story, 
+        |and we can't wait to read them!
+      // End AI-Generated Content
+    p#announment
+    main 
+      .posted-reviews
+        each post in posts
+          .reviews(class="post" +post.postId)
+            .user
+              .user-container(id="user-container")
+                img(src="/images/logo.png", alt="kitchen_pic")
+              .user-name(id="user-name")
+                p=post.user_name
+               
+            .post_content
+              p(id="content" +post.postId)=post.content
+            .icons
+              .like
+                button(type="button", id="like_btn"+post.postId ,onclick= "getLike("+post.postId+"," +post.userId+"," + user_permit +")") &#128077;
+                span(id="countlikes"+post.postId)=post.like_icon
+      
+              if (user_permit == post.userId)
+                .edit
+                  button#edit-btn(type="button", onclick="edit("+post.postId+")") ✏️
+                  span#other edit
+                .done-edit
+                  button#done-edit-btn(type="button", onclick="done("+post.postId+"," +post.userId +")") ✔️
+                  span#other Done
+                .delete 
+                  button#delete-btn(type="button", onclick="delete_post("+post.postId+"," +post.userId +")") ✖️ 
+                  span#other delete   
+    //- .flip-pages
+    //-   button#back-btn(type="button",onclick="back_btn("+curr_page+")") ⬅️
+    //-   span#page Page #{curr_page}
+    //-   button#forward-btn(type="button",onclick="forward_btn("+curr_page+")") ➡️
+    .post
+      
+      form(action="/review/post")
+        label(for="message") Message
+        br
+        textarea#message(name="message",rows="4", cols="50")
+        br
+        input(type="submit" value="Submit")
+
+    script(src="/js/reviews.js", id="get_user_interaction", data=get_user_interaction)
+
+
+    

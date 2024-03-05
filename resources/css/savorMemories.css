@@ -1,0 +1,37 @@
+@import "nav.css";
+
+body{
+  background-color: #b18573;
+  padding-top: 20px;
+  margin-top: 80px;
+}
+
+p#introduction{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(69, 30, 16);
+  margin-bottom: 30px;
+}
+
+button#change-img{
+  width: 10%;
+  height: 50px;
+  text-align: center;
+  margin-left: 40%;
+  margin-bottom: 50px;
+
+}
+button#change-img:hover{
+  background-color: rgb(154, 100, 100);
+}
+.collection{
+  display: flex;
+  width: 90%;
+  margin-left: 10%;
+  margin-bottom: 40px;
+}
+img{
+  width: 80%;
+}
+

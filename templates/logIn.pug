@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link#theme(href="../css/logIn.css", type="text/css", rel="stylesheet", as="style")
+    title Login - SavoryHarbor
+    link(rel="icon",href="resources/images/logo.png")
+  body 
+    main
+      .bg-img2
+      form#user-form(action="/user/logIn", method="post")
+        p#logIn-confirmation-message= logIn_message
+        p#account-confirmation-message= confirmation_message
+        h2 Sign Up
+        .info
+          label(for="userName") User Name
+          br
+          input#userName(type="text", name="userName", required)
+          br
+
+        .info
+          label(for="password") Password
+          br
+          input#password(type="password", name="password", required)
+          br
+          label Show Password
+          input(type="checkbox" onclick="showPassword()") 
+
+        button#log-in(type="submit") Log In
+        br
+        a#new-account(href="/user/register") Create New Account
+
+    script(src="/js/logIn.js")

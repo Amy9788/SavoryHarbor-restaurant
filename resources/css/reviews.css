@@ -1,0 +1,146 @@
+@import "nav.css";
+
+:root {
+  --reviews-bg-color: #ccb28f;
+  --posted-bg-color: #b0cbb0;
+  --message-bg-color: #f2e6d6;
+}
+
+body {
+  background-color: var(--reviews-bg-color);
+  padding-top: 20px;
+  margin-top: 80px;
+}
+
+header {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+}
+
+header p {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: "Inconsolata", monospace;
+}
+main {
+  margin-bottom: 30px;
+}
+.posted-reviews {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reviews {
+  background-color: var(--posted-bg-color);
+  width: 80%;
+  border-radius: 3em;
+  padding: 20px 50px;
+  font-size: 22px;
+}
+
+.icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  width: 50px;
+  height: 30px;
+  background-color: var(--posted-bg-color);
+  border: none;
+  font-size: 20px;
+}
+button:hover {
+  background-color: #2c58aa;
+}
+span {
+  border-left: #4c3d40 3px solid;
+  padding-left: 8px;
+}
+
+.like {
+  width: 100px;
+  border: #4c3d40 3px solid;
+}
+
+
+.post {
+  background-color: var(--message-bg-color);
+  padding: 20px 20px;
+  width: 100%;
+  font-family: "Assistant", sans-serif;
+}
+.post_content {
+  font-family: "Crimson Text", serif;
+}
+
+.flip-pages{
+  text-align: center;
+}
+.flip-pages span{
+  border-right:#4c3d40 3px solid;
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+.flip-pages button{
+  background-color: inherit;
+}
+.flip-pages button:hover{
+  transform: scale(1.5);
+}
+form {
+  text-align: center;
+}
+form label {
+  font-size: 20px;
+}
+textarea#message {
+  width: 80%;
+  margin-top: 20px;
+  padding: 20px 10px;
+  font-size: 15px;
+}
+
+form input {
+  width: 150px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+#other{
+  border: none;
+}
+
+#announment{
+  font-family: 'Times New Roman', Times, serif;
+  position: fixed;
+  font-size: 20px;
+  color: #ff6504;
+  text-align: center;
+  padding: 40px 20px;
+  top: 10%;
+}
+
+
+.user{
+  display: flex;
+  width: 100px;
+  gap: 20px;
+}
+
+.user p{
+  color: #08313A;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+
+#user-container img{
+  width: 40px;
+  border-radius: 50%;
+}

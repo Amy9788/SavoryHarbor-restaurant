@@ -1,0 +1,39 @@
+@import "nav.css";
+/* @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant:wght@300&family=Dancing+Script:wght@600"); */
+
+:root {
+  --res-name-color: #e3e0de;
+}
+main {
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.res-pics {
+  display: grid;
+  gap: 10px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+#item1 {
+  grid-column: 1 / span 2;
+}
+
+.restaurant-name {
+  position: absolute;
+  font-size: 100px;
+  top: 50%;
+  left: 30%;
+  color: var(--res-name-color);
+  font-family: "Dancing Script", cursive;
+}
+
+.about-us {
+  padding: 20px;
+  font-size: 20px;
+  color: #050a30;
+  font-family: "Cormorant", serif;
+}

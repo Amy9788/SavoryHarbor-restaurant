@@ -1,0 +1,48 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&display=swap'); */
+:root {
+  --bg-color: #C8B0A2;
+}
+
+body{
+  background-color: var(--bg-color);
+}
+
+h1{
+  padding: 100px 0px;
+  text-align: center;
+  font-family: 'Ephesis', cursive;
+  color: #3D5B59;
+}
+.option{
+  display: flex;
+  width: 60%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+h2#title-sign-in{
+  margin-left: 25%;
+}
+h2#title-create-account {
+  margin-left: 15%;
+}
+
+h2#title-sign-in-as-guess{
+  margin-left: 20%;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  /* margin-left: 24%; */
+}
+img{
+  width: 80%;
+  border-radius: 50%;
+}
+img:hover{
+  transform: scale(1.3);
+}
+
+p#account-confirmation-message{
+  font-size: 20px;
+  color: red;
+}

@@ -1,0 +1,58 @@
+@import "nav.css";
+/* @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant:wght@300&family=Dancing+Script:wght@600&family=Great+Vibes&family=Noto+Serif:wght@500&family=Questrial&display=swap"); */
+
+:root {
+  --menu-bg-color: #d4f1f4;
+  --title-color: #05445e;
+  --category-color: #055c9d;
+  --item-color: #0e86d4;
+}
+
+body {
+  background-color: var(--menu-bg-color);
+}
+
+main {
+  text-align: center;
+  height: 1000px;
+  padding-top: 30px;
+  margin-top: 50px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  border-bottom: 2px solid #333;
+  color: var(--title-color);
+}
+
+main section {
+  margin-bottom: 30px;
+  border-bottom: 2px dashed #333;
+}
+main section h2 {
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: var(--category-color);
+}
+main section p {
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  color: var(--item-color);
+}
+
+.order-btn {
+  margin-left: 5px;
+  padding: 5px 5px;
+  border-radius: 3em;
+}
+
+.order-btn:hover {
+  color: #c38370;
+  transform: scale(1.5) rotate(-2deg);
+}

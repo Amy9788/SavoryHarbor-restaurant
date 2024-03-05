@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link#theme(href="../css/logIn.css", type="text/css", rel="stylesheet")
+    title Create an Account - SavoryHarbor
+    link(rel="icon",href="resources/images/logo.png")
+  body 
+    main
+      .bg-img2
+      form#user-form(action="/user/register", method="post")
+        p#exited-account=exist_username
+        h2 Create an Account
+        .info 
+          label(for="fname") Full Name
+          br
+          input#fname(type="text", name="fname", required)
+          br
+        .info
+          label(for="email") Email
+          br
+          input#email(type="text", name="email", required)
+          br
+
+        .info 
+          label(for="userName") User Name
+          br
+          input#userName(type="text", name="userName", required)
+          br
+
+        .info
+          label(for="password") Password
+          br
+          input#password(type="password", name="password", required)
+          br
+          label Show Password
+          input(type="checkbox" onclick="showPassword()") 
+
+        button#create-account-btn(type="submit") Create
+
+    script(src="/js/logIn.js")

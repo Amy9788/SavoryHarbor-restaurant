@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link#theme(href="../css/savorMemories.css", type="text/css", rel="stylesheet")
+    title SavorMemories
+    link(rel="icon",href="resources/images/logo.png")
+  body 
+    include navlinks
+    // Begin AI-Generated Content
+    p#introduction Embark on a visual journey through our restaurant's vibrant gallery, where delectable 
+      |dishes come to life, and the lively ambiance captures the spirit of shared moments. 
+      |Immerse yourself in the flavors, the warmth, and the joy that define our dining experience. 
+    // End AI-Generated Content
+    .collection 
+      .imgs(id="img-container")
+        for item in imgs
+          img(src=item, alt="Random Image")
+

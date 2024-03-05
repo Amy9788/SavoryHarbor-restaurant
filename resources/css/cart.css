@@ -1,0 +1,86 @@
+@import "nav.css";
+/* @import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap'); */
+:root{
+  --bg-color: #203946;
+  --bg-table-color:#939764;
+}
+
+
+body{
+  background-color: var(--bg-color);
+  padding-top: 20px;
+  margin-top: 80px;
+}
+
+h1{
+  font-family: 'Neuton', serif;
+  color: #59981A;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+#order-table{
+  text-align: center;
+  width: 70%;
+  background-color: var(--bg-table-color);
+  border: 3px solid #050A30;
+  padding: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 10px 10px #3D550C;
+}
+
+th{
+  font-size: 25px;
+}
+
+td{
+  border: 2px solid black;
+  padding: 10px 10px;
+  color:#31352E;
+  font-size: 20px;
+}
+
+input{
+  width: 50px;
+  font-size: 15px;
+}
+
+#delete-btn{
+  width: 60px;
+  border-radius: 2em;
+  background-color: #5f8416;
+}
+#confirm-qty-btn{
+  width: 30px;
+  background-color: #5f8416;
+}
+
+
+#delete-btn:hover{
+  background-color: white;
+}
+#confirm-qty-btn:hover{
+  background-color: white;
+}
+
+#checkout-btn{
+  width: 120px;
+  height: 50px;
+  background-color: antiquewhite;
+  position: fixed;
+  top: 25%;
+  right: 5%;
+}
+
+#checkout-btn:hover{
+  background-color: #5f8416;
+}
+
+.display-quantity{
+  color: rgb(17, 17, 100);
+  font-size: 30px;
+}

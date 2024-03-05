@@ -1,0 +1,18 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');  */
+
+body{
+  background-color: #BD8E83;
+}
+h2{
+  width: 100%;
+  position: absolute;
+  text-shadow: 5px 5px hsl(199, 29%, 58%);
+  font-family: 'Crimson Text';
+  font-size: 100px;
+  color:#E9DAC4;
+  text-align: center;
+  text-shadow: 5px 5px #749EB2;
+  background-color: #DBC39A;
+  padding-top: 30px;
+}
+
